@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__pulse animate__infinite	infinite" href="/">BOMMU JANU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+    <!--Banner Start -->
+    <section class="bannerBgImage" id="home" data-aos="fade-right">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 bannerText">
+                    <h2 class="bannerTitle animate__animated animate__backInDown">Hi There!!</h2>
+                    <p class="bannerDesc">A Professional Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner End-->
+    <!--About Start--> <br>
+    <section data-aos="fade-down" data-aos-duration="2000" style="background-color: aliceblue;">
+        <div class="container" id="about">
+            <h1 class="text-center">About Me</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'images/janu.jpg' %}" alt="" class="card-img img-fulid">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name : Bommu Janu</li>
+                                <li>Email :<a href="https://mail.google.com" target="_blank">bommujanu@gmail</a></li>
+                                <li>Phn:No : +91 70954 55991</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6"><br>
+                            <ul>
+                                <li>Technology Working On: PYTHON FULLSTACK</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4><mark>Profile</mark></h4> <br><br>
+                        <p>Hello, my name is Janu Bommu. I completed my graduation at NRI Institute of Technology,
+                            Guntur, with a CGPA of 7.4. I am passionate about technology and aspire to excel in a
+                            growth-oriented industry where I can take on challenging responsibilities. My technical
+                            skills include proficiency in Python, as well as web development with HTML, CSS, and
+                            JavaScript. I have experience working with Django for web framework applications and SQL for
+                            database management. <br> <br>
+
+                            I have successfully completed projects such as an Online Book Store System and a Bank
+                            Management System. Through these projects, I gained hands-on experience in building
+                            user-friendly, responsive platforms with secure features like OTP verification, encrypted
+                            passwords, and transaction tracking. <br> <br>
+
+                            In addition to my technical skills, I am known for my positive attitude, self-motivation,
+                            and ability to work well within a team. I am fluent in English and Telugu, and in my free
+                            time, I enjoy playing games and listening to music.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About End-->
+    <!-- Projects Start -->
+    <section data-aos="zoom-out">
+        <div class="container" id="projects">
+            <h1 class="text-center">Projects</h1>
+            <div class="row1">
+                <div class="col-md-4">
+                    <div class="card my-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><i class="bi bi-filetype-html Bicon"></i> Bank Management
+                                System</h5>
+                            <p class="card-text">
+                                Developed a secure banking system using Python, Django, and PostgreSQL. Key features
+                                include account creation, login, fund transfers, transaction history, and OTP-based PIN
+                                reset. Designed with responsive web pages for an enhanced user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><i class="bi bi-filetype-html Bicon"></i> Online Book
+                                Store System</h5>
+                            <p class="card-text">
+                                Built an online platform for browsing and purchasing books. Implemented user
+                                authentication, a dynamic cart system, secure payment integration, and order history
+                                tracking using Python, Django, and SQLite.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><i class="bi bi-filetype-html Bicon"></i> To-Do List
+                                Application</h5>
+                            <p class="card-text">
+                                Designed a to-do list application using Django to manage daily tasks efficiently. Users
+                                can add, edit, and delete tasks, with data persistence using SQLite for maintaining task
+                                history.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><i class="bi bi-filetype-html Bicon"></i> Domino’s Clone
+                                Project</h5>
+                            <p class="card-text">
+                                Developed a pizza-ordering system inspired by Domino's, featuring a user-friendly
+                                interface. Included functionalities like cart management, order tracking, and secure
+                                user authentication.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects End -->
+    <!-- Skills Start -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5">Skills</h1>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="skill">
+                        <h5 class="d-flex justify-content-between">
+                            <span><i class="bi bi-filetype-html Bicon"></i> HTML</span>
+                            <span>90%</span>
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="skill">
+                        <h5 class="d-flex justify-content-between">
+                            <span><i class="bi bi-filetype-css Bicon"></i> CSS</span>
+                            <span>85%</span>
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;"
+                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="skill">
+                        <h5 class="d-flex justify-content-between">
+                            <span><i class="bi bi-code-slash Bicon"></i> JavaScript</span>
+                            <span>80%</span>
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="skill">
+                        <h5 class="d-flex justify-content-between">
+                            <span><i class="bi bi-database Bicon"></i> SQL</span>
+                            <span>75%</span>
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="skill">
+                        <h5 class="d-flex justify-content-between">
+                            <span><i class="bi bi-code-square Bicon"></i> Python</span>
+                            <span>90%</span>
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 90%;"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="skill">
+                        <h5 class="d-flex justify-content-between">
+                            <span><i class="bi bi-puzzle Bicon"></i> Django</span>
+                            <span>85%</span>
+                        </h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills End -->
+    <!-- Contact Start -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5">Contact Me</h1>
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-md-6 mb-4">
+                    <h5><i class="bi bi-geo-alt-fill"></i> Address</h5>
+                    <p>Srinagar, Andhra Pradesh, India</p>
+                    <h5><i class="bi bi-envelope-fill"></i> Email</h5>
+                    <p><a href="mailto:bommujanu@gmail.com">bommujanu@gmail.com</a></p>
+                    <h5><i class="bi bi-telephone-fill"></i> Phone</h5>
+                    <p><a href="tel:+917095455991">+91 70954 55991</a></p>
+                    <h5><i class="bi bi-linkedin"></i> LinkedIn</h5>
+                    <p><a href="https://www.linkedin.com/in/bommu-janu-8b9481217" target="_blank">linkedin.com/in/janubommu</a></p>
+                </div>
+                <!-- Contact Form -->
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <form method="POST" action="{% url 'send_email' %}">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        {% if messages %}
+        <div class="alert alert-success" role="alert">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+    <!-- Contact End -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
